@@ -136,3 +136,23 @@ print(response['message']) # The response from the bot
 ```
 
 ![image](https://user-images.githubusercontent.com/28991527/211236623-22f82a2c-49eb-4036-b6d0-7eb6c885438c.png)
+
+
+# Bonus: Auto-create a ppx with ChatGPT
+
+```
+from chatgpt_wrapper import ChatGPT
+import ppt_generator as utils
+
+bot = ChatGPT()
+question = "What is the meaning of life?"
+response = bot.ask(question)
+print(response)  # prints the response from chatGPT
+
+# generate a ppt file
+utils.ppt_generator(question, response)
+```
+![image](https://user-images.githubusercontent.com/28991527/211243884-73aa7a05-4ae8-43e8-8805-53c8baff317c.png)
+
+![image](https://user-images.githubusercontent.com/28991527/211244053-2d5c52ba-9c18-4f2e-9df8-b36c615950ad.png)
+![image](https://user-images.githubusercontent.com/28991527/211244071-4355bcc0-8a0f-4736-b0ab-7757d7d47dd5.png)
