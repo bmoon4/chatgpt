@@ -66,7 +66,7 @@ pip install -U pyChatGPT
 python3 -m pyChatGPT
 ```
 
-```
+```python
 from pyChatGPT import ChatGPT
 
 session_token ="YOUR_SESSION_TOKEN"
@@ -120,7 +120,7 @@ print(response)
 
 Example
 
-```
+```python
 from revChatGPT.ChatGPT import Chatbot
 
 chatbot = Chatbot({
@@ -140,7 +140,16 @@ print(response['message']) # The response from the bot
 
 # Bonus: Auto-create a ppx with ChatGPT
 
+Link: https://python-pptx.readthedocs.io/en/latest/user/quickstart.html
+
+install `python-pptx` library
+
+```bash
+pip install python-pptx
 ```
+
+
+```python
 from chatgpt_wrapper import ChatGPT
 import ppt_generator as utils
 
